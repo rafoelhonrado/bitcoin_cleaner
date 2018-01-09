@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import scipy.stats as stats
 from datetime import datetime
 days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
-dataSourcePath = 'F:\\cursos\\tipologia\\crypto\\coin_data.csv'
+dataSourcePath = 'coin_data.csv'
 datasource = pd.read_csv(dataSourcePath)
 print('Cleaning Data')
 numberOfZeros = datasource['Currency'].isnull().sum()
